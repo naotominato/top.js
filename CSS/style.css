@@ -1,0 +1,86 @@
+.btn {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #000;
+  width: 160px;
+  text-align: center;
+  padding: 15px;
+  margin: 30px;
+}
+
+.btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.btn1 {
+  color: #fff;
+  background: #000;
+  text-decoration: none;
+  display: block;
+  width: 160px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid #000;
+  margin: 0px 30px 30px;
+  transition: 10s;
+}
+
+.btn1:hover {
+  background: #fff;
+  color: #000;
+}
+
+.btn2 {
+  color: #fff;
+  background: #0c88ca;
+  display: block;
+  width: 160px;
+  padding: 15px;
+  text-align: center;
+  margin: 0 30px 30px;
+  text-decoration: none;
+  border-bottom: 4px solid #005691;
+  transition: 5s;
+}
+
+.btn2:hover {
+  background: #005691;
+  border-bottom: 0 solid #005691;
+  transform: translate3d(0, 4px,0);
+}
+
+.top {
+  background: #cccccc;
+  height: 300px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background: linear-gradient(#e66365,#9198e5);
+  height: 3000px;
+  width: 100%;
+}
+
+.scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #999;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  opacity: .8;
+  cursor: pointer;
+  color: #fff;
+}
+
+
