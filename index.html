@@ -14,10 +14,100 @@
   <a href="#" class="btn1">ボタン</a>
   <a href="#" class="btn2">ボタン</a>
 
+
   <div class="top">top</div>
   <div class="content"></div>
   <button class="scroll-top" id="button">↑</button>
 
-  <script scr="js/main.js"></script>
+
+  <div class="menu" id="menu">
+    <span class="menu__line--top"></span>
+    <span class="menu__line--middle"></span>
+    <span class="menu__line--bottom"></span>
+  </div>
+
+
+  <div class="tab">
+    <ul class="tab-menu">
+      <li class="tab-menu__item active">タブ1</li>
+      <li class="tab-menu__item">タブ2</li>
+      <li class="tab-menu__item">タブ3</li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-content__item show">コンテンツ1</div>
+      <div class="tab-content__item">コンテンツ2</div>
+      <div class="tab-content__item">コンテンツ3</div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a class="a--tag" href="#">リンク1</a></li>
+        <li><a class="a--tag" href="#">リンク2</a></li>
+        <li><a class="a--tag" href="#">リンク3</a></li>
+      </ul>
+    </nav>
+    <div class="menu1" id="menu1">
+      <span class="menu1__line--top"></span>
+      <span class="menu1__line--middle"></span>
+      <span class="menu1__line--bottom"></span>
+    </div>
+  </div>
+
+
+  <ul class="menu2">
+    <li>
+      <a href="#">Menu1</a>
+      <ul>
+        <li><a href="#">Menu1-1</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Menu2</a>
+      <ul> 
+        <li><a href="#">Menu2-1</a></li>
+        <li><a href="#">Menu2-2</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Menu3</a>
+      <ul>
+        <li><a href="#">Menu3-1</a></li>
+        <li><a href="#">Menu3-2</a></li>
+        <li><a href="#">Menu3-3</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Menu</a>
+      <ul>
+        <li><a href="#">Menu4-1</a></li>
+        <li><a href="#">Menu4-2</a></li>
+        <li><a href="#">Menu4-3</a></li>
+        <li><a href="#">Menu4-4</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  
+  <div class="parallax-bg">固定背景１</div>
+  <div class="scrollbox">スクロールコンテンツ</div>
+  <div class="parallax-bg">固定背景２</div>
+
+  <!--９　モーダルウィンドウ-->
+
+  <input type="button" id="openBtn" value="開く" class="openBtn">
+  <div id="modal" class="modal">
+    <div class="modal__content">
+      <div class="modal__content-inner">
+        <p>モーダル</p>
+        <input type="button" id="closeBtn" value="閉じる">
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -52,6 +52,8 @@
   transform: translate3d(0, 4px,0);
 }
 
+/*---------トップメニュー----------*/
+
 .top {
   background: #cccccc;
   height: 300px;
@@ -81,6 +83,293 @@
   opacity: .8;
   cursor: pointer;
   color: #fff;
+}
+
+/*-------ハンバーガーメニュー-------*/
+
+.menu {
+  margin: 100px 0;
+  display: inline-block;
+  width: 36px;
+  height: 32px;
+  cursor: pointer;
+  background: yellow;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.menu__line--top,
+.menu__line--middle,
+.menu__line--bottom {
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background: #000;
+  position: absolute;
+  transition: .5s;
+}
+
+.menu__line--top {
+  top: 0;
+}
+
+.menu__line--middle {
+  top: 14px;
+}
+
+.menu__line--bottom {
+  bottom: 0;
+}
+
+.menu.open span:nth-of-type(1) {
+  top: 14px;
+  transform: rotate(45deg);
+}
+
+.menu.open span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.menu.open span:nth-of-type(3) {
+  top: 14px;
+  transform: rotate(-45deg);
+}
+
+/*-----タブメニュー-----*/
+
+.tab {
+  width: 500px;
+  margin: 0 auto 100px;
+  background: lightskyblue;
+}
+
+.tab-menu {
+  display: flex;
+}
+
+.tab-menu__item {
+  list-style: none;
+  width: 100px;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab-menu__item:not(:last-of-type) {
+  border-right: none;
+}
+
+.tab-menu__item.active {
+  background: #000;
+  color: #fff;
+}
+
+.tab-content {
+  height: 200px;
+  border: 1px solid #000;
+}
+
+.tab-content__item {
+  font-size: 40px;
+  display: none;
+}
+
+.tab-content__item.show {
+  display: block;
+}
+
+/*-------ドロワーメニュー-------*/
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+.a--tag {
+  color: blue;
+  text-decoration: none;
+}
+
+.nav {
+  background: #eee;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: -100%;
+  transition: .7s;
+}
+
+.nav ul {
+  padding-top: 80px;
+}
+
+.nav ul li {
+  margin-top: 50px;
+  list-style-type: none;
+}
+
+.menu1 {
+  background: #0c88ca;
+  display: inline-block;
+  width: 36px;
+  height: 32px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.menu1__line--top,
+.menu1__line--middle,
+.menu1__line--bottom {
+  background: #000;
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  transition: .5s;
+}
+
+.menu1__line--top {
+  top: 0;
+}
+
+.menu1__line--middle {
+  top: 14px;
+}
+
+.menu1__line--bottom {
+  bottom: 0;
+}
+
+.menu1.open1 span:nth-of-type(1) {
+  top: 14px;
+  transform: rotate(45deg);
+}
+
+.menu1.open1 span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.menu1.open1 span:nth-of-type(3) {
+  top: 14px;
+  transform: rotate(-45deg);
+}
+
+.in {
+  transform: translate(100%);
+}
+
+/*-----ドロップダウンメニュー-----*/
+
+.menu2 {
+  margin: 100px 0 200px;
+  display: flex;
+  list-style: none;
+  background: #000;
+  width: 600px;
+  height: 40px;
+}
+
+.menu2 li {
+  width: 25%;
+  text-align: center;
+}
+
+.menu2 li a {
+  display: block;
+  padding: 13px 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu2 li ul li {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  color: #fff;
+  transition: .2s;
+}
+
+.menu2 li ul li a {
+  background: #000;
+  padding: 13px 15px;
+  font-size: 12px;
+}
+
+.menu2 li:hover a {
+  color: red;
+}
+
+.menu2 li:hover ul li {
+  height: 38px;
+  border-bottom: 1px solid #fff;
+}
+
+.menu2 li:hover ul li:last-child{
+  border-bottom: 0;
+}
+
+
+/*-----パララックス-----*/
+body,
+html {
+  height: 100%;
+}
+
+.parallax-bg,
+.scrollbox {
+  font-size: 48px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.parallax-bg {
+  background: url("https://coachtech-matter.s3.ap-northeast-1.amazonaws.com/dynamic-web-design/parallax.jpg") fixed center/cover no-repeat;
+}
+
+.scrollbox {
+  background: #000;
+}
+
+/*-----９　モーダルウィンドウ-----*/
+
+.openBtn {
+  display: block;
+  margin: 100px auto 50px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+
+.modal__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.modal__content-inner {
+  background: white;
+  width: 500px;
+  padding: 50px;
+  text-align: center;
 }
 
 
