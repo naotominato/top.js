@@ -394,7 +394,6 @@ html {
   opacity: 0;
   transition-duration: .5s;
   cursor: pointer;
-  z-index: -1;
 }
 
 .contents5.is-open {
