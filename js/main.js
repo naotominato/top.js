@@ -45,7 +45,7 @@ target2.addEventListener('click', () => {
 //９　モーダルウィンドウ
 
 const openBtn = document.getElementById('openBtn');
-const closeBtn = document.getElementById('openBtn');
+const closeBtn = document.getElementById('closeBtn');
 const modal = document.getElementById('modal');
 
 openBtn.addEventListener('click', () => {
@@ -61,3 +61,16 @@ window.addEventListener('click', (e) => {
     modal.style.display = 'none';
   }
 });
+
+//１０　アコーディオンパネル
+
+const menu5 = document.getElementsByClassName("menu5");
+for (let i = 0; i < menu5.length; i++) {
+  menu5[i].addEventListener("click", toggle);
+};
+
+function toggle() {
+  const content3 = this.nextElementSibling;
+  content3.classList.toggle("is-open");
+};
+
