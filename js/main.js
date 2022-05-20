@@ -36,9 +36,9 @@ function tabSwitch() {
 //
 
 const target2 = document.getElementById('menu1');
+const nav = document.getElementById('nav');
 target2.addEventListener('click', () => {
   target2.classList.toggle('open1');
-  const nav = document.getElementById('nav');
   nav.classList.toggle('in');
 });
 

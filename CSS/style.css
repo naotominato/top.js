@@ -393,7 +393,7 @@ html {
   height: 0;
   opacity: 0;
   transition-duration: .5s;
-  cursor: pointer;
+  pointer-events: none;
 }
 
 .contents5.is-open {
@@ -401,5 +401,6 @@ html {
   padding: 10px;
   height: auto;
   opacity: 1;
+  pointer-events: auto;
 }
 
